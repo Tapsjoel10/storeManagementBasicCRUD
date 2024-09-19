@@ -3,7 +3,7 @@
 <ul>
     {% for item in items %}
     <li>
-        {{ item.name }} - {{ item.quantity }} in stock - ${{ item.price }}
+        {{ item.name }} - {{ item.quantity }} in stock - {{ item.price }}frs
         <a href="{% url 'item_update' item.pk %}">Edit</a>
         <a href="{% url 'item_delete' item.pk %}">Delete</a>
     </li>
